@@ -8,7 +8,7 @@ on:
 
 env:
   PATCH_FLAG: true #false编译最新版本
-  COMMIT: 8.3.110.9
+  COMMIT: 9.5.172.21
   SRC_UPLOAD: true
   BINARY_UPLOAD: true
 
@@ -79,7 +79,7 @@ jobs:
         
     # 7zip d8
     - name: 7zip d8
-      if env.BINARY_UPLOAD == 'true' && !cancelled()
+      if: env.BINARY_UPLOAD == 'true' && !cancelled()
       run: |
         ls -l
         zip d8.zip v8/out/x64.release/d8
