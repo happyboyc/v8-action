@@ -8,7 +8,7 @@ on:
 
 env:
   PATCH_FLAG: true #false编译最新版本
-  COMMIT: 9.5.172.21
+  COMMIT: 8.3.110.9
   SRC_UPLOAD: true
   BINARY_UPLOAD: true
 
